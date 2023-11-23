@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    height: 100vh;
+    
+    /* FLEX */
+    display: flex; /* row, no-wrap, justify->start, align->stretch */
+}
+
+.left-container {
+    background: green;
+    flex: 1; /*flex-grow: 1;*/
+}
+
+.right-container {
+    background: wheat;
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.login-form {
+    height: 50vh;
+    background: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+input {
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    
+    align-self: flex-start;
+    min-width: 200px;
+}
+
+img {
+    width: 100%;
+    object-fit: fill;
+}

@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz@6..72&family=Ovo&family=Titillium+Web:ital,wght@0,400;0,700;1,400&family=UnifrakturCook:wght@700&family=UnifrakturMaguntia&display=swap');
+
+/* font-family: 'Newsreader', serif;
+font-family: 'Ovo', serif;
+font-family: 'Titillium Web', sans-serif;
+font-family: 'UnifrakturCook', cursive;
+font-family: 'UnifrakturMaguntia', cursive; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz@6..72&family=Ovo&family=Titillium+Web:ital,wght@0,400;0,700;1,400&family=UnifrakturCook:wght@700&family=UnifrakturMaguntia&display=swap');
+
+/* font-family: 'Newsreader', serif;
+font-family: 'Ovo', serif;
+font-family: 'Titillium Web', sans-serif;
+font-family: 'UnifrakturCook', cursive;
+font-family: 'UnifrakturMaguntia', cursive; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+
+header {
+    text-align: center;
+    background: orange;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+
+    flex: 1;
+}
+
+.content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background: paleturquoise;
+
+    align-content: flex-start;
+
+    width: 640px;
+}
+
+.tag {
+    background: mediumslateblue;
+    color: white;
+    margin: 5px 2px 5px 2px;
+    padding: 0 1rem 0 1rem;
+    text-align: center;
+    border-radius: 4px;
+    max-height: 1lh;
+}
+
+footer {
+    text-align: center;
+    background: green;
+}
