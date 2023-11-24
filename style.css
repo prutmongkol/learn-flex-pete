@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz@6..72&family=Ovo&family=Titillium+Web:ital,wght@0,400;0,700;1,400&family=UnifrakturCook:wght@700&family=UnifrakturMaguntia&display=swap');
+
+/* font-family: 'Newsreader', serif;
+font-family: 'Ovo', serif;
+font-family: 'Titillium Web', sans-serif;
+font-family: 'UnifrakturCook', cursive;
+font-family: 'UnifrakturMaguntia', cursive; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+nav {
+    /* debug background */
+    background: wheat;
+    
+}
+
+.navigation {
+    background: deepskyblue;
+    margin: 0;
+
+    list-style-type: none;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+    display: block;
+}
+
+.navigation a:hover {
+    background: rgb(0, 136, 255);
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 640px) {
+    .navigation {
+        flex-flow: column wrap;
+        /* padding: 0; */
+    }
+    
+    .navigation a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .navigation li:last-of-type a {
+        border-bottom: none;
+    }
+
+}
