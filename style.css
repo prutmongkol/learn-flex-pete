@@ -11,16 +11,51 @@ font-family: 'UnifrakturMaguntia', cursive; */
     padding: 0;
     box-sizing: border-box;
     font-family: 'Titillium Web', sans-serif;
+
+    /* debug border */
+    /* border: 1px solid red; */
 }
 
-nav {
-    /* debug background */
-    background: wheat;
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+/* Header */
+.header {
+    background: deepskyblue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.keyword-wrapper {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.keyword__label {
+    padding-left: 10px;
+}
+
+.keyword__bar {
+    flex: 1;
+    border: none;
+}
+
+.keyword__button {
+    border-radius: 4px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
     
 }
 
 .navigation {
-    background: deepskyblue;
     margin: 0;
 
     list-style-type: none;
@@ -41,9 +76,71 @@ nav {
     background: rgb(0, 136, 255);
 }
 
+/* Main */
+.product-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.product-header__title {
+    flex: 1;
+}
+
+.selector-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.product-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+
+    margin: 20px auto 20px auto;
+}
+
+.product {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.product__name {
+    font-weight: bold;
+}
+
+.product__footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.product img {
+    width: 200px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid grey;
+    box-shadow: 4px 4px 4px grey;
+}
+
+/* Footer */
+.footer__wrapper {
+    background: deepskyblue;
+}
+
+.footer__text {
+    text-align: center;
+}
+
+/* Media Query */
 @media (max-width: 768px) {
     .navigation {
         justify-content: space-around;
+    }
+
+    .header {
+        flex-flow: column wrap;
     }
 }
 

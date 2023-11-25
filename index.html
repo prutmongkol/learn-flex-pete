@@ -3,20 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
-    <title>Workshop 5</title>
+    <title>CSS Mock-up Store</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="navigation">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header">
+            <div class="keyword-wrapper">
+                <label for="keyword" class="keyword__label">OMNIcitrus</label>
+                <input type="search" id="keyword" name="keyword" class="keyword__bar" />
+                <button id="submit" class="keyword__button">
+                    <span class="material-symbols-outlined search__icon">
+                        search
+                        </span>
+                </button>
+            </div>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
+    <main>
+        <div class="wrapper">
+            
+            <div class="product-header">
+                <h2 class="product-header__title">Citrus (1kg)</h2>
+                <!-- Filter By -->
+                <div class="selector-wrapper">
+                    <label for="filter" class="filter__label">Filter By:</label>
+                    <select id="filter" class="filter__selector">
+                        <option value="all-items">All Items</option>
+                        <option value="oranges">Oranges</option>
+                        <option value="lemon-lime">Lemon and Lime</option>
+                        <option value="other-citrus">Other Citrus</option>
+                    </select>
+                </div>
+                <!-- Sort By -->
+                <div class="selector-wrapper">
+                    <label for="sort" class="sort__label">Sort By:</label>
+                    <select id="sort" class="sort__selector">
+                        <option value="featured">Featured</option>
+                        <option value="on-sale">On Sale</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="product-wrapper">
+                <div class="product">
+                    <img src="assets/amanatsu.jpg" alt="Amanatsu Orange"/>
+                    <span class="product__name">Amanatsu Orange</span>
+                    <div class="product__footer">
+                        <span class="product__price">฿220</span>
+                        <span class="material-symbols-outlined">
+                            add_shopping_cart
+                        </span>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="assets/grapefruit.jpg" alt="Grapefruit"/>
+                    <span class="product__name">Grapefruit</span>
+                    <div class="product__footer">
+                        <span class="product__price">฿120</span>
+                        <span class="material-symbols-outlined">
+                            add_shopping_cart
+                        </span>
+                    </div>    
+                </div>
+                <div class="product">
+                    <img src="assets/kumquat.jpg" alt="Kumquat"/>
+                    <span class="product__name">Kumquat</span>
+                    <div class="product__footer">
+                        <span class="product__price">฿75</span>
+                        <span class="material-symbols-outlined">
+                            add_shopping_cart
+                        </span>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="assets/lemon.jpg" alt="Lemon"/>
+                    <span class="product__name">Lemon</span>
+                    <div class="product__footer">
+                        <span class="product__price">฿70</span>
+                        <span class="material-symbols-outlined">
+                            add_shopping_cart
+                        </span>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="assets/lime.jpg" alt="Lime"/>
+                    <span class="product__name">Lime</span>
+                    <div class="product__footer">
+                        <span class="product__price">฿45</span>
+                        <span class="material-symbols-outlined">
+                            add_shopping_cart
+                        </span>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="assets/mandarin-oranges.jpg" alt="Mandarin Orange"/>
+                    <span class="product__name">Mandarin Orange</span>
+                    <div class="product__footer">
+                        <span class="product__price">฿80</span>
+                        <span class="material-symbols-outlined">
+                            add_shopping_cart
+                        </span>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="assets/pomelo.jpg" alt="Pomelo"/>
+                    <span class="product__name">Pomelo</span>
+                    <div class="product__footer">
+                        <span class="product__price">฿110</span>
+                        <span class="material-symbols-outlined">
+                            add_shopping_cart
+                        </span>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="assets/satsuma-orange.jpg" alt="Satsuma Orange"/>
+                    <span class="product__name">Mandarin Orange</span>
+                    <div class="product__footer">
+                        <span class="product__price">฿80</span>
+                        <span class="material-symbols-outlined">
+                            add_shopping_cart
+                        </span>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="assets/sweet-orange.jpg" alt="Sweet Orange"/>
+                    <span class="product__name">Sweet Orange</span>
+                    <div class="product__footer">
+                        <span class="product__price">฿110</span>
+                        <span class="material-symbols-outlined">
+                            add_shopping_cart
+                        </span>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="assets/tangelo.jpg" alt="Tangelo"/>
+                    <span class="product__name">Tangelo</span>
+                    <div class="product__footer">
+                        <span class="product__price">฿80</span>
+                        <span class="material-symbols-outlined">
+                            add_shopping_cart
+                        </span>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="assets/yuzu.jpg" alt="Yuzu"/>
+                    <span class="product__name">Yuzu</span>
+                    <div class="product__footer">
+                        <span class="product__price">฿110</span>
+                        <span class="material-symbols-outlined">
+                            add_shopping_cart
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer__wrapper">
+            <p class="footer__text">&copy; Omnicitrus Inc., All Left Reversed.</p>
+        </div>
+    </footer>
     
 
 </body>
