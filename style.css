@@ -6,6 +6,12 @@ font-family: 'Titillium Web', sans-serif;
 font-family: 'UnifrakturCook', cursive;
 font-family: 'UnifrakturMaguntia', cursive; */
 
+/* color palette */
+/* #E8AA2C
+#997B4D
+#FFEDCB
+#005248 */
+
 * {
     margin: 0;
     padding: 0;
@@ -58,7 +64,7 @@ font-family: 'UnifrakturMaguntia', cursive; */
 }
 
 .keyword__button {
-    border-radius: 4px;
+    /* border-radius: 4px; */
     border: none;
     background-color: rgba(255, 255, 255, 0);
     margin: 0 1em;
@@ -109,6 +115,10 @@ font-family: 'UnifrakturMaguntia', cursive; */
 .selector-wrapper {
     display: flex;
     flex-flow: column nowrap;
+}
+
+.selector-wrapper:last-of-type {
+    padding: 0 6px;
 }
 
 .product-wrapper {
@@ -183,6 +193,15 @@ font-family: 'UnifrakturMaguntia', cursive; */
 }
 
 @media (max-width: 640px) {
+    .keyword__label {
+        margin: 0 0.5em;
+        font-size: 1em;
+    }
+
+    .keyword__bar {
+        border: 2px solid white;
+    }
+    
     .navigation {
         flex-flow: column wrap;
         /* padding: 0; */
@@ -201,5 +220,11 @@ font-family: 'UnifrakturMaguntia', cursive; */
 
     .main__wrapper {
         min-height: calc(100vh - 212px);
+    }
+
+    .product-header__title {
+        flex: 1;
+        margin: 1em 1em;
+        font-size: 1em;
     }
 }
