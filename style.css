@@ -157,7 +157,7 @@ font-family: 'UnifrakturMaguntia', cursive; */
     object-fit: cover;
     border-radius: 50%;
     border: 1px solid grey;
-    box-shadow: 4px 4px 4px grey;
+    box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.5);
 }
 
 /* Footer */
